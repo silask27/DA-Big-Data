@@ -116,7 +116,7 @@ summary(wellness$Fatigue)
 
 
 # Create histogram for PFI
-hist(merged_data$PFI, 
+hist(merged2$PFI, 
      col = "lightblue",  # Set color of bars
      main = "Distribution of PFI",  # Main title
      xlab = "PFI",  # X-axis label
@@ -124,8 +124,8 @@ hist(merged_data$PFI,
      border = "black"  # Border color of bars
 )
 # Calculate mean and median
-mean_value <- mean(merged_data$PFI, na.rm = T)
-median_value <- median(merged_data$PFI, na.rm = T)
+mean_value <- mean(merged2$PFI, na.rm = T)
+median_value <- median(merged2$PFI, na.rm = T)
 # Add mean line (red)
 abline(v = mean_value, col = "red", lwd = 2)=
 # Add median line (blue)
@@ -143,7 +143,7 @@ title(main = "Distribution of PFI",
       sub = "Histogram with Mean and Median Lines", 
       cex.main = 1.2, 
       cex.sub = 0.8)
-summary(merged_data$PFI)
+summary(merged2$PFI)
 
 
 
