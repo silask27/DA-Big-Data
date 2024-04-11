@@ -154,18 +154,6 @@ summary(merged2$PFI)
 
 
 
-# View the updated data frame
-View(merged_data)
-
-# Assuming merged_data is already loaded and contains BestOutOfMyself_Quantitative and Fatigue columns
-
-# Compute Performance-Fatigue Index (PFI)
-merged_data$PFI <- (merged_data$BestOutOfMyself_Quantitative - merged_data$Fatigue) / 
-  (merged_data$BestOutOfMyself_Quantitative + merged_data$Fatigue)
-
-
-
-
 pfi_model <- lm(PFI ~ SleepHours + Nutrition + USG + SessionLoad + WakeTime + BedTime
                 + Duration + DailyLoad + AcuteLoad + ChronicLoad + SessionType
                 + Outcome + Opponent + TeamPoints + TeamPointsAllowed
